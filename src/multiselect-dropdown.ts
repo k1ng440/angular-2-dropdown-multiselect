@@ -269,7 +269,7 @@ export class MultiselectDropdown implements OnInit, DoCheck, ControlValueAccesso
   }
 
   checkAll() {
-    this.model = this.options.map(option => option.id);
+    this.model = this.options.map<number>(option => option.id);
     this.onModelChange(this.model);
   }
 
